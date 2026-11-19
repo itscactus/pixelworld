@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>PixelWorld</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>PixelWorld</h1>
+        <nav aria-label="Primary navigation">
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#stats">Stats</a>
+        </nav>
+        <div class="country" aria-live="polite">Loading country...</div>
+    </div>
+
+    <div class="color-picker" role="group" aria-label="Color picker">
+        <button class="color-button" data-color="#000000" onclick="selectColor(this)">Black</button>
+        <button class="color-button" data-color="#FF0000" onclick="selectColor(this)">Red</button>
+        <button class="color-button" data-color="#00FF00" onclick="selectColor(this)">Green</button>
+        <button class="color-button" data-color="#0000FF" onclick="selectColor(this)">Blue</button>
+        <button class="color-button" data-color="#FFFF00" onclick="selectColor(this)">Yellow</button>
+        <button class="color-button" data-color="#FFFFFF" onclick="selectColor(this)">White</button>
+    </div>
+
+    <div class="board" id="board" aria-label="Game board" role="grid">
+        
+    </div>
+</body>
+</html>
